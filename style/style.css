@@ -3,3 +3,6 @@
 	padding: 0;
 	box-sizing: border-box;
 }
+.btn-container {
+	font-variant-caps: " all-small-caps;" !important;
+}
