@@ -3,6 +3,40 @@
 	padding: 0;
 	box-sizing: border-box;
 }
-.btn-container {
-	font-variant-caps: " all-small-caps;" !important;
+/*hero container*/
+.hero-container {
+	background-color: #ff5500;
+	display: flex;
+	flex-direction: column;
+	height: 50vh !important;
+	justify-content: center;
+	width: 100vw !important;
+}
+.hero-title {
+	color: white;
+	font-family: Open Sans, sans-serif;
+	text-transform: uppercase;
+}
+.hero-text {
+	color: white;
+	font-family: 'Montserrat', sans-serif;
+}
+.btn-hero-footer {
+	background-color: black;
+	border-radius: 5px;
+	color: white;
+	cursor: pointer;
+	font-family: 'Montserrat', sans-serif;
+	font-size: 12px;
+	outline: none;
+	padding: 8px;
+	text-transform: uppercase;
+}
+/*section 360*/
+.card-information {
+	margin-bottom: 27px !important;
+}
+.card-title {
+	font-family: 'Montserrat', sans-serif;
+	font-weight: 900;
 }
