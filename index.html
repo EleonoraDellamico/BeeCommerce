@@ -118,7 +118,7 @@
   </div>
 </div>  
 <!-- btn Carusel -->
- <div class="container-fluid d-flex justify-content-center w-100 p-5" style="background-color: #14171d;">
+ <div class="container-fluid d-flex justify-content-center p-5" style="background-color: #14171d;">
    <div class="row">
      <div class="col-12">
        <button type="button" class="btn btn-lg text-white text-uppercase" data-bs-toggle="popover" style="background-color: #ee5d36;">Parliamo del tuo progetto</button>
@@ -129,31 +129,84 @@
   </body>
 </html>
 <!-- Progetti realizzati -->
-<div class="container width-100 p-5">
+<div class="container-fluid">
   <div class="row">
-    <div class="col-12 d-flex flex-column">
+    <div class="col-12 col-md-6 d-flex flex-column">
       <p style="color:#ee5d36">Ultimi progetti realizzati</p>
       <h2 style="color:#ee5d36">01.</h2>
       <h2 class="display-6" style="font-family: Open Sans, sans-serif;">Motoabbigliamento.it Abbigliamento e accessori per Moto</h2>
       <small>Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus voluptatibus ad modi dolor suscipit cumque voluptate!</small>
       <p style="color:#ee5d36">scopri di piú</p>
+    </div>
+    <div class="col-12 col-md-6 d-flex justify-content-center flex-column">
     <img class="col-12" src="assets/img/progetto-moto.png" alt="foto progetto moto"/>
     </div>
   </div>
 </div>
 <!-- Team -->
 <!-- Il nostro network -->
-<div class="container">
+<div class="container-fluid">
   <div class="row">
     <div class="col-12 d-flex justify-content-center">
       <h2 class="display-6 text-uppercase" style="font-family: Open Sans, sans-serif; color:#ee5d36"> Il nostro network</h2>
     </div>
-    <div class="col-12 col-md-6">
-      <img  class="col-12"src="./assets/img/progetto-moto.png" alt="foto progetto moto">
-    </div>
-    <div class="col-12 col-md-6">
-      <img class="col-12" src="./assets/img/progetto-moto.png" alt="">
-    </div>
-
+    <div class="card col-12 col-md-6">
+  <div class="card-body">
+    <p class="card-text">Ecommerce-school.it</p>
+    <img src="./assets/img/ecommerceSchool.png" alt="Logo ecommerce">
+     <p class="card-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Soluta repudiandae alias quaerat nostrum illo iure.</p>
+      <small>Vai al sito</small>
+     <img src="./assets/img/project-ecommerceSchool.png" class="card-img-bottom" alt="Foto web ecommerce">
   </div>
 </div>
+<div class="card col-12 col-md-6">
+  <div class="card-body">
+    <p class="card-text">magentiamo.it</p>
+    <img src="./assets/img/logo-magentiamo.png" alt="Logo magentiamo">
+    <p class="card-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Soluta repudiandae alias quaerat nostrum illo iure.</p>
+      <small>Vai al sito</small>
+     <img src="./assets/img/proyect-Magentiamo.png" class="card-img-bottom" alt="Foto web magentiamo">
+  </div>
+</div> 
+  </div>
+</div>
+<!-- Contact -->
+<div class="container-fluid d-flex flex-column align-items-center p-4" style="background-color: #ee5d36 ;">
+  <p class="text-white" style="font-family: sans-serif; letter-spacing: 2px;">Cosa aspetti a contattarci?</p>
+  <h6 class="text-uppercase text-white" style="font-family: Open Sans, sans-serif;">Sei interessato ai nostri servizi?</h6>
+  <p class="text-white" style="font-family: sans-serif; letter-spacing: 2px;">Lavoriamo con te solo se crediamo nel progetto e possiamo farlo crescere</p>
+<form class="row g-3">
+  <div class="col-6 col-md-6">
+    <input type="text" class="form-control" id="name" placeholder="Nome">
+  </div>
+    <div class="col-6 col-md-6">
+    <input type="text" class="form-control" id="surname" placeholder="Cognome">
+  </div>
+  <div class="col-6 col-md-6">
+    <input type="text" class="form-control" id="company" placeholder="Azienda">
+  </div>
+  <div class="col-6 col-md-6">
+    <input type="text" class="form-control" id="phone"placeholder="Telefono">
+  </div>
+  <div class="col-6 col-md-6">
+    <input type="email" class="form-control" id="inputEmail4" placeholder="Email">
+  </div>
+  <div class="col-6 col-md-6">
+    <input type="number" class="form-control" id="inputEmail4" placeholder="Budget">
+  </div>
+  
+  <div class="col-12">
+    <div class="form-check">
+      <input class="form-check-input" type="checkbox" id="gridCheck">
+      <label class="form-check-label text-white" for="gridCheck">
+        Lorem ipsum dolor sit amet consectetur adipisicing.
+      </label>
+    </div>
+    <div class="col-12 d-flex justify-content-center">
+    <button type="button" class="btn btn-dark text-uppercase text-white" style="font-family: sans-serif; font-size: 12px; letter-spacing: 2px;"data-bs-toggle="popover" >Contattaci</button>
+  </div>
+  </div>
+</form>
+</div>
+<!-- Footer -->
+
