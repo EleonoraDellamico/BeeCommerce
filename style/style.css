@@ -39,20 +39,30 @@
 	padding: 30px !important;
 }
 #full-stack-container {
-	margin-bottom: 27px !important;
 	background-color: #f1f2f696;
 	height: fit-content;
 	padding: 8px;
+	margin-top: 15px;
 }
 .section-info-title {
 	margin-bottom: 27px !important;
 }
+.title-section {
+	text-transform: uppercase;
+	font-family: 'Montserrat', sans-serif;
+	font-weight: 900;
+}
+.card-small-section {
+	color: #ff5500;
+}
 .arrow-img {
 	width: 20px;
 	height: auto;
+	margin-left: 6px;
 }
 .card-information {
 	margin-bottom: 27px !important;
+	padding: 20px;
 }
 .info-icon {
 	margin-bottom: 10px;
@@ -66,4 +76,40 @@
 .card-text {
 	color: rgb(149, 148, 148);
 }
-/*PROGETTI REALIZZATI*/
+/* Il nostro networking */
+#container-networking {
+	padding: 30px !important;
+}
+.container-title-networking {
+	margin-bottom: 15px;
+}
+.title-networking {
+	color: #ff5500;
+	font-family: 'Montserrat', sans-serif;
+	font-weight: 900;
+}
+.row-networking {
+	display: flex;
+	justify-content: space-around;
+}
+.card-networking {
+	margin-bottom: 15px;
+	height: 450px !important;
+}
+.bodyCard-networking {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: flex-start;
+}
+.site-text {
+	color: black;
+}
+.icon-networking {
+	width: 207px;
+	height: auto;
+}
+.card-img-bottom {
+	width: 300px;
+	height: auto;
+}
