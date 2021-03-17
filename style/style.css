@@ -95,6 +95,7 @@
 .card-networking {
 	margin-bottom: 15px;
 	height: 450px !important;
+	position: relative;
 }
 .bodyCard-networking {
 	display: flex;
@@ -110,6 +111,18 @@
 	height: auto;
 }
 .card-img-bottom {
-	width: 300px;
 	height: auto;
+}
+/*Contact*/
+.container-contact {
+	background-color: #ff5500;
+}
+.btn-black {
+	margin-bottom: 35px;
+	margin-top: 35px;
+	background-color: black;
+	cursor: pointer;
+	color: white;
+	font-family: 'Montserrat', sans-serif;
+	text-transform: uppercase;
 }
