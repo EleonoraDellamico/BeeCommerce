@@ -38,13 +38,32 @@
 .card-container {
 	padding: 30px !important;
 }
+#full-stack-container {
+	margin-bottom: 27px !important;
+	background-color: #f1f2f696;
+	height: fit-content;
+	padding: 8px;
+}
 .section-info-title {
 	margin-bottom: 27px !important;
 }
+.arrow-img {
+	width: 20px;
+	height: auto;
+}
 .card-information {
 	margin-bottom: 27px !important;
+}
+.info-icon {
+	margin-bottom: 10px;
+	width: 40px;
+	height: auto;
 }
 .card-title {
 	font-family: 'Montserrat', sans-serif;
 	font-weight: 900;
 }
+.card-text {
+	color: rgb(149, 148, 148);
+}
+/*PROGETTI REALIZZATI*/
