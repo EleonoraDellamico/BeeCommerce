@@ -187,3 +187,35 @@ ul {
 .container-details {
 	text-align: center;
 }
+/*Carusel*/
+.carousel-title {
+	font-family: 'Montserrat', sans-serif;
+	font-weight: 900;
+	color: white;
+}
+.carousel-item {
+	text-align: -webkit-center;
+}
+.container-btn-carousel {
+	padding: 50px;
+	background-color: #14171d;
+	display: flex;
+	justify-content: center;
+	margin-bottom: 60px;
+}
+.btn-proyect {
+	background-color: #ff5500;
+	font-family: 'Montserrat', sans-serif;
+	text-transform: uppercase;
+	color: white;
+	padding: 8px;
+	font-size: 12px;
+	cursor: pointer;
+}
+
+.container-title-carousel {
+	background-color: #14171d;
+	padding: 30px;
+	text-align: center;
+	margin-top: 30px;
+}
