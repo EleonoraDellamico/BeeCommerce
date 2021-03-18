@@ -15,7 +15,7 @@
 }
 .hero-title {
 	color: white;
-	font-family: Open Sans, sans-serif;
+	font-family: 'Montserrat', sans-serif;
 	text-transform: uppercase;
 }
 .hero-text {
@@ -66,7 +66,7 @@
 }
 .info-icon {
 	margin-bottom: 10px;
-	width: 40px;
+	width: 60px;
 	height: auto;
 }
 .card-title {
@@ -87,6 +87,7 @@
 	color: #ff5500;
 	font-family: 'Montserrat', sans-serif;
 	font-weight: 900;
+	text-transform: uppercase;
 }
 .row-networking {
 	display: flex;
@@ -115,7 +116,22 @@
 }
 /*Contact*/
 .container-contact {
-	background-color: #ff5500;
+	background-color: #ff5500 !important;
+	padding: 30px;
+}
+.container-contact-info {
+	margin-bottom: 24px;
+	margin-top: 24px;
+}
+
+.contact-text {
+	color: white;
+	font-family: 'Montserrat', sans-serif;
+}
+.contact-title {
+	color: white;
+	font-family: 'Montserrat', sans-serif;
+	text-transform: uppercase;
 }
 .btn-black {
 	margin-bottom: 35px;
@@ -125,4 +141,49 @@
 	color: white;
 	font-family: 'Montserrat', sans-serif;
 	text-transform: uppercase;
+}
+.label-input {
+	font-family: 'Montserrat', sans-serif;
+	font-size: 9px;
+	color: white;
+}
+/*Footer*/
+.container-footer {
+	/*	background-color: #14171d;*/
+	background-color: #0b0c0e;
+	padding: 30px;
+}
+.social-icon-footer {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+}
+.social-icon {
+	margin-right: 12px;
+}
+.container-link-footer {
+	margin-top: 29px;
+	display: flex;
+	justify-content: center;
+}
+ul {
+	display: flex;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+.link-footer {
+	color: white;
+	list-style: none;
+	font-family: 'Montserrat', sans-serif;
+	margin-right: 21px;
+	margin-top: 10px;
+}
+.small-text-footer {
+	color: white;
+	font-family: 'Montserrat', sans-serif;
+	font-size: 12px;
+}
+.container-details {
+	text-align: center;
 }
