@@ -12,11 +12,14 @@
 	justify-content: center;
 	width: 100vw !important;
 	padding: 30px !important;
+	text-align: start;
+	margin-bottom: 30px;
 }
 .hero-title {
 	color: white;
 	font-family: 'Montserrat', sans-serif;
 	text-transform: uppercase;
+	font-weight: 900;
 }
 .hero-text {
 	color: white;
