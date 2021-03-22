@@ -3,20 +3,44 @@
 	padding: 0;
 	box-sizing: border-box;
 }
-/*Ipad */
+/*NAVBAR */
+.logo-navBar {
+	width: 200px;
+	height: auto;
+}
+.nav-link {
+	color: black !important;
+}
+
+/*MEDIA QUERIES */
 @media (min-width: 1000px) {
+	.navbar {
+		padding-left: 160px !important;
+		padding: 14px !important;
+	}
 	.navbar-expand-lg .navbar-collapse {
 		display: flex !important;
-		/* flex-basis: auto; */
 		justify-content: flex-end;
 		padding-left: 80px;
 		padding-right: 80px;
 		font-family: 'Montserrat', sans-serif;
 	}
+	.nav-item {
+		margin-right: 40px;
+		font-size: 14px;
+	}
+	#btn-active {
+		border: 1px solid #ee5335;
+		border-radius: 10px;
+	}
+	#navBar-link-active {
+		color: #ee5335 !important;
+		font-weight: 500;
+	}
 }
-/*hero container*/
+/*HERO CONTAINER*/
 .hero-container {
-	background-color: #ff5500;
+	background-color: #ee5335;
 	display: flex;
 	flex-direction: column;
 	height: 80vh !important;
@@ -70,7 +94,7 @@
 		margin-top: 36px !important;
 	}
 }
-/*section 360*/
+/* SECTION 360*/
 .card-container {
 	padding: 30px !important;
 }
@@ -89,7 +113,7 @@
 	font-weight: 900;
 }
 .card-small-section {
-	color: #ff5500;
+	color: #ee5335;
 }
 .arrow-img {
 	width: 20px;
@@ -112,6 +136,7 @@
 .card-text {
 	color: rgb(149, 148, 148);
 }
+/*MEDIAQUERIES SECTION 360*/
 @media (min-width: 768px) {
 	.card-container {
 		margin-top: 90px !important;
@@ -138,17 +163,237 @@
 		padding-top: 0;
 	}
 }
+/*CAROUSEL LOGHI*/
+.container-title-carousel {
+	background-color: #14171d;
+	padding: 30px;
+	text-align: center;
+	margin-top: 30px;
+	padding-top: 70px;
+	margin-bottom: -2px;
+}
+.carousel-title {
+	font-family: 'Montserrat', sans-serif;
+	font-weight: 900;
+	color: white;
+}
+#carousel-logos {
+	background-color: #14171d;
+}
+.carousel-item {
+	text-align: -webkit-center;
+}
+.container-btn-carousel {
+	padding: 50px;
+	background-color: #14171d;
+	display: flex;
+	justify-content: center;
+	margin-bottom: 60px;
+	padding-bottom: 76px;
+	margin-top: -2px;
+}
+.btn-project {
+	background-color: #ee5335;
+	font-family: 'Montserrat', sans-serif;
+	text-transform: uppercase;
+	color: white;
+	padding: 8px;
+	font-size: 12px;
+	cursor: pointer;
+}
 
-/* Il nostro networking */
+/*MEDIAQUERIES CAROUSEL LOGHI */
+@media (min-width: 768px) {
+	.container-title-carousel {
+		padding-top: 120px;
+	}
+	.btn-project {
+		padding: 12px !important;
+		font-size: 17px !important;
+	}
+	.container-btn-carousel {
+		padding-bottom: 120px;
+	}
+}
+@media (min-width: 1000px) {
+	.container-title-carousel {
+		padding-top: 152px;
+	}
+	.btn-project {
+		padding: 12px !important;
+		font-size: 17px !important;
+	}
+	.container-btn-carousel {
+		padding-bottom: 152px;
+	}
+}
+/*CAROUSEL PROJECTS */
+.container-slider {
+	padding: 5px 30px;
+}
+.container-section-projects-title {
+	display: flex;
+	justify-content: center;
+}
+.title-section-projects {
+	text-transform: uppercase;
+	color: #ee5335 !important;
+	font-family: 'Montserrat', sans-serif;
+	font-weight: bold;
+	margin-top: 30px;
+}
+.title-container-slider {
+	margin-right: 20px;
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+	text-align: justify;
+}
+span {
+	color: #ee5335;
+	margin-right: 5px;
+	font-size: 18px;
+}
+.title-slider {
+	font-family: 'Montserrat', sans-serif;
+	font-weight: bold;
+	font-size: 18px;
+}
+.container-img-project {
+	display: none;
+}
+
+.card-text-carousel {
+	font-family: 'Montserrat', sans-serif;
+}
+.card-small-slider {
+	font-size: .875em;
+	color: #ee5335;
+}
+.container-info-client {
+	display: flex;
+}
+.container-img-client {
+	margin-right: 5px;
+	border-radius: 50px;
+}
+.img-client {
+	width: 40px;
+	height: auto;
+	border-radius: 50px;
+	box-shadow: 1px 4px 0 rgb(0 0 0 / 11%), 0 -3px 0px 0 rgb(0 0 0 / 19%);
+}
+
+.carousel-control-next,
+.carousel-control-prev {
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	z-index: 1;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 15%;
+	padding: 0;
+	color: #fff;
+	text-align: center;
+	background: 0 0;
+	border: 0;
+	opacity: 0.5;
+	transition: opacity .15s ease;
+	/*margin: -49px;*/
+	margin: -9px;
+	filter: drop-shadow(2px 4px 6px black);
+}
+.carousel-control-next-icon,
+.carousel-control-prev-icon {
+	width: 22px;
+}
+.quote {
+	font-style: oblique;
+	font-family: 'Montserrat', sans-serif;
+	font-size: 12px;
+}
+.card-text-client {
+	font-family: 'Montserrat', sans-serif;
+	font-size: 12px;
+}
+
+.logo-project {
+	width: 96px;
+	height: auto;
+	margin: 20px 0 20px 0px;
+}
+.carousel-indicators {
+	margin-bottom: -20px !important;
+}
+#btnSlider-active {
+	background-color: #ee5335 !important;
+}
+.btnSlider {
+	background-color: #ee5335 !important;
+	opacity: 0.5;
+}
+
+/*MEDIAQUERIES*/
+@media (min-width: 768px) {
+	.container-carousel-projects {
+		padding: 0 30px;
+	}
+	.container-img-project {
+		display: flex;
+		align-items: center;
+	}
+	.img-carousel-projects {
+		box-shadow: 10px 10px #ee5335 !important;
+	}
+
+	.title-container-slider {
+		padding: 25px;
+	}
+	.carousel-indicators {
+		margin-bottom: -40px !important;
+	}
+	.logo-project {
+		margin: 0px 0 5px 0px;
+	}
+	.carousel-control-next,
+	.carousel-control-prev {
+		margin: -40px;
+	}
+}
+@media (min-width: 1000px) {
+	.title-slider {
+		font-size: 34px;
+	}
+	span {
+		font-size: 34px;
+	}
+	.card-text-carousel {
+		font-size: 18px;
+	}
+	.quote {
+		font-size: 16px;
+	}
+	.container-carousel-projects {
+		padding: 0 100px;
+	}
+}
+/*TEAM */
+/* IL NOSTRO NETWORKING */
 #container-networking {
 	padding: 30px !important;
+	background-color: #f5f7f8 !important;
+	width: 100vw;
+	margin-top: 120px;
+	padding-bottom: 111px !important;
 }
 .container-title-networking {
 	margin-bottom: 80px;
 	margin-top: 90px;
 }
 .title-networking {
-	color: #ff5500;
+	color: #ee5335;
 	font-family: 'Montserrat', sans-serif;
 	font-weight: 900;
 	text-transform: uppercase;
@@ -161,6 +406,9 @@
 	margin-bottom: 15px;
 	height: 450px !important;
 	position: relative;
+	box-shadow: 5px 8px 58px -11px #888888;
+	border-radius: 20px;
+	/* box-shadow: 5px 10px 8px 10px #888888; */
 }
 .bodyCard-networking {
 	display: flex;
@@ -178,14 +426,31 @@
 .card-img-bottom {
 	height: auto;
 }
-/*Contact*/
+@media (min-width: 1000px) {
+	.card-networking {
+		height: 600px !important;
+	}
+
+	.bodyCard-networking {
+		display: flex;
+		flex-direction: column;
+		justify-content: space-around;
+	}
+}
+
+/*CONTACT*/
 .container-contact {
-	background-color: #ff5500 !important;
+	background-color: #ee5335 !important;
 	padding: 30px;
 }
 .container-contact-info {
 	margin-bottom: 24px;
 	margin-top: 24px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	display: flex;
+	text-align: center;
 }
 
 .contact-text {
@@ -211,10 +476,39 @@
 	font-size: 9px;
 	color: white;
 }
-/*Footer*/
+@media (min-width: 768px) {
+	.container-contact {
+		padding: 90px !important;
+	}
+	.contact-text {
+		font-size: 20px;
+	}
+	.contact-title {
+		font-size: 23px;
+		font-weight: bold;
+	}
+}
+@media (min-width: 1000px) {
+	.container-contact {
+		padding: 100px 300px !important;
+	}
+	.container-contact-info {
+		align-items: center;
+	}
+	.contact-text {
+		font-size: 20px;
+	}
+	.contact-title {
+		font-size: 30px;
+		font-weight: bold;
+	}
+	.btn-contact {
+		padding: 16px !important;
+	}
+}
+/*FOOTER*/
 .container-footer {
-	/*	background-color: #14171d;*/
-	background-color: #0b0c0e;
+	background-color: #14171d;
 	padding: 30px;
 }
 .social-icon-footer {
@@ -250,129 +544,4 @@ ul {
 }
 .container-details {
 	text-align: center;
-}
-/*Carusel*/
-.carousel-title {
-	font-family: 'Montserrat', sans-serif;
-	font-weight: 900;
-	color: white;
-}
-.carousel-item {
-	text-align: -webkit-center;
-}
-.container-btn-carousel {
-	padding: 50px;
-	background-color: #14171d;
-	display: flex;
-	justify-content: center;
-	margin-bottom: 60px;
-	padding-bottom: 76px;
-	margin-top: -2px;
-}
-.btn-project {
-	background-color: #ff5500;
-	font-family: 'Montserrat', sans-serif;
-	text-transform: uppercase;
-	color: white;
-	padding: 8px;
-	font-size: 12px;
-	cursor: pointer;
-}
-
-.container-title-carousel {
-	background-color: #14171d;
-	padding: 30px;
-	text-align: center;
-	margin-top: 30px;
-	padding-top: 70px;
-	margin-bottom: -2px;
-}
-@media (min-width: 768px) {
-	.container-title-carousel {
-		padding-top: 120px;
-	}
-	.btn-project {
-		padding: 12px !important;
-		font-size: 17px !important;
-	}
-	.container-btn-carousel {
-		padding-bottom: 120px;
-	}
-}
-@media (min-width: 1000px) {
-	.container-title-carousel {
-		padding-top: 152px;
-	}
-	.btn-project {
-		padding: 12px !important;
-		font-size: 17px !important;
-	}
-	.container-btn-carousel {
-		padding-bottom: 152px;
-	}
-}
-/*carusel Progetti */
-.container-slider {
-	padding: 30px;
-}
-.title-container-slider {
-	margin-right: 20px;
-	display: flex;
-	flex-direction: column;
-	justify-content: flex-start;
-	text-align: justify;
-}
-span {
-	color: #ff5500;
-	margin-right: 5px;
-}
-.title-slider {
-	font-family: 'Montserrat', sans-serif;
-	font-weight: bold;
-}
-.card-text-carousel {
-	font-family: 'Montserrat', sans-serif;
-}
-.card-small-slider {
-	font-size: .875em;
-	color: #ff5500;
-}
-.img-client {
-	width: 36px;
-	height: auto;
-	border-radius: 50px;
-}
-
-.carousel-control-next,
-.carousel-control-prev {
-	position: absolute;
-	top: 0;
-	bottom: 0;
-	z-index: 1;
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	width: 15%;
-	padding: 0;
-	color: #fff;
-	text-align: center;
-	background: 0 0;
-	border: 0;
-	opacity: 0.5;
-	transition: opacity .15s ease;
-	margin: -49px;
-}
-.quote {
-	font-style: oblique;
-	font-family: 'Montserrat', sans-serif;
-	font-size: 10px;
-}
-.card-text-client {
-	font-family: 'Montserrat', sans-serif;
-	font-size: 8px;
-}
-
-.logo-project {
-	width: 60px;
-	height: auto;
 }

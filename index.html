@@ -18,9 +18,9 @@
   <body>
           <!-- NavBar -->
    <nav class="navbar navbar-expand-lg navbar-light bg-white">
-  <div class="container-fluid">
+  <div class="container">
     <a class="navbar-brand" href="#">
-      <img src="./assets/img/BeeCommerceLogo.png" alt="Logo" width="200" height="50" class="d-inline-block align-top">
+      <img src="./assets/img/BeeCommerceLogo.png" alt="Logo" class="logo-navBar d-inline-block align-top">
     </a>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
@@ -28,7 +28,7 @@
     <div class="collapse navbar-collapse" id="navbarNav">
       <ul class="navbar-nav">
         <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="#">Home</a>
+          <a class="nav-link" aria-current="page" href="#">Home</a>
         </li>
         <li class="nav-item">
           <a class="nav-link" href="#">Chi siamo</a>
@@ -39,8 +39,8 @@
         <li class="nav-item">
            <a class="nav-link" href="#">Blog</a>
         </li>
-        <li class="nav-item">
-           <a class="nav-link" href="#">Contattaci</a>
+        <li class="nav-item" id="btn-active">
+           <a class="nav-link active"id="navBar-link-active" href="#">Contattaci</a>
         </li>
       </ul>
     </div>
@@ -67,7 +67,7 @@
        <p class="card-text">Approccio Full Stack per accompagnare il tuo ecommerce dalla start up al break even</p>
      </div>
       </div>
-    <div class="card-information col-12 col-md-4  jusitify-content-center"  id="Pianificazione">
+    <div class="card-information col-12 col-md-4  jusitify-content-center">
        <img class="info-icon" src="./assets/img/calendar.png" />
        <h4 class="card-title">Pianificazione</h4>
        <p class="card-text"> Puoi avere successo in questo mercato ma é necessario armarsi di un business plan stategico</p>
@@ -112,7 +112,7 @@
  </div>  
 <!-- Carusel -->  
  <div id="multi-slider" class="carousel slide" data-bs-ride="carousel">
-  <div class="carousel-inner col-xs-12" style="background-color: #14171d;">
+  <div class="carousel-inner col-xs-12" id="carousel-logos" >
     <div class="carousel-item active ">
       <img  class="img-carusel d-block col-xs-3" src="./assets/img/LuxuryDesign.png" style="filter: invert(1);" alt="Logo-Luxury">
     </div>
@@ -139,19 +139,21 @@
    </div>
  </div>  
 <!--Slider Proyects-->
-<div>
+<div class="container-carousel-projects">
+<div class="container">
   <div class="row row-networking">
-    <div class="col-12 d-flex justify-content-center">
-      <p style="color:#ff5500; font-family: Montserrat, sans-serif;"> Ultimi progetti</p>
+    <div class=" container-section-projects-title col-12 d-flex">
+      <p class="title-section-projects"> Ultimi progetti realizzati</p>
     </div>
     </div>
 </div>
 <div id="carouselExampleIndicators" class="carousel slide" data-bs-touch="false" data-bs-interval="false">
   <div class="carousel-indicators">
-    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
-    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active btnSlider" id="btnSlider-active" aria-current="true" aria-label="Slide 1"></button>
+    <button class="btnSlider"type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+    <button class="btnSlider"type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
   </div> 
+  <!--First project-->
   <div class="carousel-inner">
     <div class="carousel-item active">
       <div class="container-slider d-flex">
@@ -162,35 +164,48 @@
       <div class="container-opinion">
         <img class="logo-project" src="./assets/img/logoMoto.png" alt="logo">
         <blockquote class="quote">"Abbiamo collaborato con beecommerce per il restyling del nostro ecommerce e non torneremo piú indietro"</blockquote>
+        <div class="container-info-client">
+        <div class="container-img-client">
         <img class="img-client"src="https://pymstatic.com/44247/conversions/arturo-torres-medium.jpg" alt="">
+        </div>
+        <div class="container-data-client">
         <small class="card-text-client">Frank Gilbert</small>
         <small class="card-text-client">CEO di Motoabbigliamento</small>
+        </div>
+        </div>
       </div>
       </div>
        <div class="container-img-project col-md-6">
-      <img src="./assets/img/progetto-moto.png" class="d-block w-100" alt="Logo progetto">
+      <img src="./assets/img/progetto-moto.png" class=" img-carousel-projects" alt="Logo progetto">
       </div>
     </div>
     </div>
+    <!-- Second project-->
      <div class="carousel-item">
       <div class="container-slider d-flex">
       <div class="title-container-slider col-md-6">
-      <h6 class="title-slider"><span>02.</span>Motoabbigliamento.it Abbigliamento e accessori per Moto</h6>
+      <h6 class="title-slider"><span>02.</span>Motoabbigliamento.it <br> Abbigliamento e accessori per Moto</h6>
       <small class="card-text-carousel">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sed in tempore harum, dignissimos quas totam?.</small>
       <p class="card-small-slider">scopri di piú <img class="arrow-img"src="assets/img/arrow.png"/></p>
       <div class="container-opinion">
         <img class="logo-project" src="./assets/img/logoMoto.png" alt="logo">
         <blockquote class="quote">"Abbiamo collaborato con beecommerce per il restyling del nostro ecommerce e non torneremo piú indietro"</blockquote>
+         <div class="container-info-client">
+        <div class="container-img-client">
         <img class="img-client"src="https://pymstatic.com/44247/conversions/arturo-torres-medium.jpg" alt="">
+        </div>
+        <div class="container-data-client">
         <small class="card-text-client">Frank Gilbert</small>
         <small class="card-text-client">CEO di Motoabbigliamento</small>
+        </div>
+        </div>
       </div>
       </div>
        <div class="container-img-project col-md-6">
-      <img src="./assets/img/progetto-moto.png" class="d-block w-100" alt="Logo progetto">
+      <img src="./assets/img/progetto-moto.png" class="img-carousel-projects" alt="Logo progetto">
       </div>
     </div>
-    </div>
+   
   <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"  data-bs-slide="prev">
     <span class="carousel-control-prev-icon" aria-hidden="true"></span>
     <span class="visually-hidden">Previous</span>
@@ -201,26 +216,11 @@
   </button>
 </div>
 </div>
-
-<!-- <div class="container-fluid">
-  <div class="row">
-    <div class="col-12 col-md-6 d-flex flex-column">
-      <p style="color:#ee5d36">Ultimi progetti realizzati</p>
-      <div class="title-container">
-      <h2 style="color:#ee5d36">01.</h2>
-      <h2 class="display-6" style="font-family: Open Sans, sans-serif;">Motoabbigliamento.it Abbigliamento e accessori per Moto</h2>
-      </div>
-      <small>Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus voluptatibus ad modi dolor suscipit cumque voluptate!</small>
-      <p style="color:#ee5d36">scopri di piú</p>
-    </div>
-    <div class="col-12 col-md-6 d-flex justify-content-center flex-column">
-    <img class="col-12" src="assets/img/progetto-moto.png" alt="foto progetto moto"/>
-    </div>
-  </div>
-</div>  -->
+</div>
+</div>
 <!-- Team -->
 <!-- Il nostro network -->
-<div class="container" id="container-networking">
+<div id="container-networking">
   <div class="row row-networking">
     <div class="col-12 d-flex justify-content-center container-title-networking">
       <h2 class=" title-networking"> Il nostro network</h2>
@@ -246,11 +246,11 @@
   </div>
 </div>
 <!-- Contact -->
-<div class=" container-contact container-fluid d-flex flex-column align-items-center">
+<div class=" container-contact d-flex flex-column align-items-center">
   <div class="row">
-    <div class="container-contact-info col-12 d-flex flex-column align-items-center mx-auto">
+    <div class="container-contact-info col-12">
   <p class="contact-text">Cosa aspetti a contattarci?</p>
-  <h6 class="contact-title">Sei interessato ai nostri servizi?</h6>
+  <h6 class="contact-title">Sei interessato ai <br> nostri servizi?</h6>
   <p class="contact-text text-center">Lavoriamo con te solo se crediamo nel progetto e possiamo farlo crescere</p>
   </div>
   </div>
@@ -282,7 +282,7 @@
       </label>
     </div>
     <div class="col-12 d-flex justify-content-center">
-    <button type="button" class="btn btn-black" data-bs-toggle="popover" >Contattaci</button>
+    <button type="button" class="btn btn-black btn-contact" data-bs-toggle="popover" >Contattaci</button>
   </div>
   </div>
 </form>
