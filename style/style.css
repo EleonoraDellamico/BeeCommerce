@@ -3,6 +3,17 @@
 	padding: 0;
 	box-sizing: border-box;
 }
+/*Ipad */
+@media (min-width: 1000px) {
+	.navbar-expand-lg .navbar-collapse {
+		display: flex !important;
+		/* flex-basis: auto; */
+		justify-content: flex-end;
+		padding-left: 80px;
+		padding-right: 80px;
+		font-family: 'Montserrat', sans-serif;
+	}
+}
 /*hero container*/
 .hero-container {
 	background-color: #ff5500;
@@ -36,6 +47,28 @@
 	padding: 8px;
 	text-transform: uppercase;
 	margin-top: 15px;
+}
+@media (min-width: 768px) {
+	.hero-container {
+		padding-left: 100px !important;
+	}
+	.hero-text {
+		font-size: 20px;
+		margin-top: 56px;
+	}
+}
+@media (min-width: 1000px) {
+	.hero-container {
+		padding-left: 142px !important;
+		padding-top: 127px !important;
+	}
+	.hero-title {
+		font-size: 70px !important;
+	}
+	.hero-text {
+		font-size: 20px;
+		margin-top: 36px !important;
+	}
 }
 /*section 360*/
 .card-container {
@@ -79,6 +112,33 @@
 .card-text {
 	color: rgb(149, 148, 148);
 }
+@media (min-width: 768px) {
+	.card-container {
+		margin-top: 90px !important;
+	}
+	.section-info-title {
+		padding-right: 20px;
+	}
+	.card-information {
+		padding-top: 0;
+	}
+}
+
+@media (min-width: 1000px) {
+	.card-container {
+		padding-left: 133px !important;
+		padding-right: 133px !important;
+		margin-top: 111px !important;
+		margin-bottom: 200px !important;
+	}
+	.section-info-title {
+		padding-right: 35px;
+	}
+	.card-information {
+		padding-top: 0;
+	}
+}
+
 /* Il nostro networking */
 #container-networking {
 	padding: 30px !important;
@@ -207,9 +267,9 @@ ul {
 	justify-content: center;
 	margin-bottom: 60px;
 	padding-bottom: 76px;
-	margin-top: -1px;
+	margin-top: -2px;
 }
-.btn-proyect {
+.btn-project {
 	background-color: #ff5500;
 	font-family: 'Montserrat', sans-serif;
 	text-transform: uppercase;
@@ -225,8 +285,33 @@ ul {
 	text-align: center;
 	margin-top: 30px;
 	padding-top: 70px;
+	margin-bottom: -2px;
 }
-/*carusel indicator*/
+@media (min-width: 768px) {
+	.container-title-carousel {
+		padding-top: 120px;
+	}
+	.btn-project {
+		padding: 12px !important;
+		font-size: 17px !important;
+	}
+	.container-btn-carousel {
+		padding-bottom: 120px;
+	}
+}
+@media (min-width: 1000px) {
+	.container-title-carousel {
+		padding-top: 152px;
+	}
+	.btn-project {
+		padding: 12px !important;
+		font-size: 17px !important;
+	}
+	.container-btn-carousel {
+		padding-bottom: 152px;
+	}
+}
+/*carusel Progetti */
 .container-slider {
 	padding: 30px;
 }
