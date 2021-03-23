@@ -380,12 +380,43 @@ span {
 	}
 }
 /*TEAM */
+.container-team {
+	width: 100vw;
+	background-image: url("../assets/img/fondo-team.jpeg");
+	margin-top: 90px;
+	padding: 20px;
+}
+.container-row {
+	display: flex;
+	background-color: #14171d;
+}
+.team-box {
+	background-color: #14171d;
+}
+.container-photo-team {
+	height: 500px;
+	background-color: #14171d;
+	padding: 20px;
+	border-radius: 10%;
+}
+.employee {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.prueba {
+	text-align: center;
+}
+#employee-padding {
+	padding-top: 60px;
+}
+
 /* IL NOSTRO NETWORKING */
 #container-networking {
 	padding: 30px !important;
 	background-color: #f5f7f8 !important;
 	width: 100vw;
-	margin-top: 120px;
 	padding-bottom: 111px !important;
 }
 .container-title-networking {
