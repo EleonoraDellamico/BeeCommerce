@@ -385,12 +385,10 @@ span {
 	background-image: url("../assets/img/fondo-team.jpeg");
 	margin-top: 90px;
 	padding: 20px;
+	display: flex;
 }
 .container-row {
 	display: flex;
-	background-color: #14171d;
-}
-.team-box {
 	background-color: #14171d;
 }
 .container-photo-team {
@@ -398,6 +396,9 @@ span {
 	background-color: #14171d;
 	padding: 20px;
 	border-radius: 10%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
 }
 .employee {
 	display: flex;
@@ -405,13 +406,24 @@ span {
 	align-items: center;
 }
 
-.prueba {
+.team {
 	text-align: center;
+	color: white;
+	margin: 0 !important;
 }
 #employee-padding {
 	padding-top: 60px;
 }
-
+.container-info-team {
+	height: 500px;
+	padding: 20px;
+	border-radius: 10%;
+	display: flex;
+	flex-direction: column;
+}
+.div {
+	display: flex;
+}
 /* IL NOSTRO NETWORKING */
 #container-networking {
 	padding: 30px !important;
