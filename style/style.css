@@ -5,17 +5,18 @@
 }
 /*NAVBAR */
 .logo-navBar {
-	width: 200px;
-	height: auto;
+	height: 45px;
+	width: auto;
 }
 .nav-link {
 	color: black !important;
+	font-size: 15px !important;
 }
 
 /*MEDIA QUERIES */
 @media (min-width: 1000px) {
 	.navbar {
-		padding-left: 160px !important;
+		margin-left: 149px !important;
 		padding: 14px !important;
 	}
 	.navbar-expand-lg .navbar-collapse {
@@ -217,14 +218,14 @@
 }
 @media (min-width: 1000px) {
 	.container-title-carousel {
-		padding-top: 152px;
+		padding-top: 160px;
 	}
 	.btn-project {
-		padding: 12px !important;
-		font-size: 17px !important;
+		padding: 20px !important;
+		font-size: 19px !important;
 	}
 	.container-btn-carousel {
-		padding-bottom: 152px;
+		padding-bottom: 160px;
 	}
 }
 /*CAROUSEL PROJECTS */
@@ -388,26 +389,32 @@ span {
 	display: flex;
 	align-items: center;
 	height: 700px;
+	background-position: top;
 }
 .container-row {
 	display: flex;
 	background-color: #14171d;
 }
 .container-photo-team {
-	height: 500px;
+	height: 524px;
 	background-color: #14171d;
 	padding: 20px;
 	border-radius: 10%;
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
+	align-items: center;
 }
 .employee {
 	display: flex;
 	flex-direction: column;
 	align-items: center;
 }
-
+.img-employee {
+	width: 56px;
+	height: auto;
+	border-radius: 50px;
+}
 .name {
 	font-weight: bolder;
 	color: #ee5335;
@@ -423,19 +430,47 @@ span {
 	font-family: 'Montserrat', sans-serif;
 }
 
-#employee-padding {
+.employee-padding {
 	padding-top: 60px;
 }
 .container-info-team {
-	height: 500px;
+	height: fit-content;
 	padding: 20px;
 	border-radius: 10%;
 	display: flex;
 	flex-direction: column;
 	display: none;
+	margin-left: 10px;
 }
 .div {
 	display: flex;
+}
+.small-team {
+	color: white;
+	font-family: 'Montserrat', sans-serif;
+}
+.title-team,
+.subtitle-team {
+	color: white;
+	font-family: 'Montserrat', sans-serif;
+	font-weight: bold;
+}
+.text-team {
+	color: white;
+	font-family: 'Montserrat', sans-serif;
+}
+.tick {
+	margin-right: 8px;
+}
+@media (min-width: 768px) {
+	.container-info-team {
+		display: flex;
+	}
+}
+@media (min-width: 1000px) {
+	.container-team {
+		justify-content: center;
+	}
 }
 /* IL NOSTRO NETWORKING */
 #container-networking {
