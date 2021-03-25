@@ -229,8 +229,13 @@
 	}
 }
 /*CAROUSEL PROJECTS */
+.container-carousel-projects {
+	padding: 10px !important;
+}
+
 .container-slider {
-	padding: 5px 30px;
+	padding: 5px 30px !important;
+	height: 600px;
 }
 .container-section-projects-title {
 	display: flex;
@@ -250,15 +255,20 @@
 	justify-content: flex-start;
 	text-align: justify;
 }
-span {
+.container-title-carousel-proyects {
+	display: flex;
+}
+.span {
 	color: #ee5335;
-	margin-right: 5px;
-	font-size: 18px;
+	margin-right: 10px;
+	font-size: 20px;
+	font-weight: bold;
 }
 .title-slider {
 	font-family: 'Montserrat', sans-serif;
 	font-weight: bold;
 	font-size: 18px;
+	text-align: left;
 }
 .container-img-project {
 	display: none;
@@ -266,10 +276,18 @@ span {
 
 .card-text-carousel {
 	font-family: 'Montserrat', sans-serif;
+	padding-left: 37px;
 }
 .card-small-slider {
 	font-size: .875em;
 	color: #ee5335;
+	padding-left: 37px;
+}
+.container-opinion {
+	margin-left: 37px;
+	border-left: 1px solid #ee5335;
+	padding: 8px;
+	margin-bottom: 25px;
 }
 .container-info-client {
 	display: flex;
@@ -283,6 +301,12 @@ span {
 	height: auto;
 	border-radius: 50px;
 	box-shadow: 1px 4px 0 rgb(0 0 0 / 11%), 0 -3px 0px 0 rgb(0 0 0 / 19%);
+}
+.carousel-control-next-icon {
+	background-image: url(../assets/img/arrow-right.png);
+}
+.carousel-control-prev-icon {
+	background-image: url(../assets/img/arrow-left.png);
 }
 
 .carousel-control-next,
@@ -304,14 +328,12 @@ span {
 	transition: opacity .15s ease;
 	/*margin: -49px;*/
 	margin: -9px;
-	filter: drop-shadow(2px 4px 6px black);
 }
 .carousel-control-next-icon,
 .carousel-control-prev-icon {
 	width: 22px;
 }
 .quote {
-	font-style: oblique;
 	font-family: 'Montserrat', sans-serif;
 	font-size: 12px;
 }
@@ -326,24 +348,40 @@ span {
 	margin: 20px 0 20px 0px;
 }
 .carousel-indicators {
-	margin-bottom: -20px !important;
+	margin-bottom: 105px !important;
 }
 #btnSlider-active {
+	background-color: grey !important;
+}
+#btnFixed {
 	background-color: #ee5335 !important;
+	width: 30px;
+	margin-right: 10px;
+	height: 6px;
+	border-radius: 25%;
+}
+#carousel-btn {
+	display: flex;
+	align-items: center;
 }
 .btnSlider {
-	background-color: #ee5335 !important;
+	background-color: grey !important;
 	opacity: 0.5;
+	height: 10px !important;
+	width: 10px !important;
+	border-radius: 100% !important;
 }
 
 /*MEDIAQUERIES*/
 @media (min-width: 768px) {
-	.container-carousel-projects {
-		padding: 0 30px;
-	}
 	.container-img-project {
 		display: flex;
 		align-items: center;
+	}
+	.img-carousel-projects {
+		box-shadow: 10px 10px #ee5335 !important;
+		width: 323px;
+		height: auto;
 	}
 	.img-carousel-projects {
 		box-shadow: 10px 10px #ee5335 !important;
@@ -353,7 +391,7 @@ span {
 		padding: 25px;
 	}
 	.carousel-indicators {
-		margin-bottom: -40px !important;
+		margin-bottom: 99px !important;
 	}
 	.logo-project {
 		margin: 0px 0 5px 0px;
@@ -362,22 +400,64 @@ span {
 	.carousel-control-prev {
 		margin: -40px;
 	}
+	.container-img-project {
+		display: flex;
+		/* align-items: center; */
+		align-items: flex-start;
+		padding: 25px;
+	}
 }
 @media (min-width: 1000px) {
+	.container-section-projects-title {
+		display: flex !important;
+		margin-left: 134px !important;
+		padding: 0 !important;
+		font-variant: all-petite-caps !important;
+		justify-content: flex-start;
+		margin-bottom: 0px !important;
+	}
 	.title-slider {
 		font-size: 34px;
 	}
-	span {
-		font-size: 34px;
+	.span {
+		color: #ee5335;
+		margin-right: 13px;
+		font-size: 58px;
+		font-weight: bold;
+		/* font-size: xxx-large; */
+		margin-left: -34px;
 	}
 	.card-text-carousel {
 		font-size: 18px;
+		padding-left: 65px;
+		padding-right: 20px;
 	}
+	.card-small-slider {
+		padding-left: 65px;
+	}
+	.container-opinion {
+		margin-left: 65px;
+		padding-right: 48px;
+		margin-top: 20px;
+	}
+
 	.quote {
 		font-size: 16px;
 	}
-	.container-carousel-projects {
-		padding: 0 100px;
+
+	.img-carousel-projects {
+		box-shadow: 10px 10px #ee5335 !important;
+		width: 519px;
+		height: auto;
+	}
+	.container-img-project {
+		display: flex;
+		/* align-items: center; */
+		align-items: flex-start;
+		padding: 25px;
+	}
+	.title-carousel-proyect {
+		margin-bottom: 20px !important;
 	}
 }
 /*TEAM */
