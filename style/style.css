@@ -459,7 +459,7 @@
 	.img-carousel-projects {
 		box-shadow: 10px 10px #ee5335 !important;
 		height: auto;
-		width: 519px;
+		width: 80%;
 	}
 	.container-img-project {
 		align-items: flex-start;
@@ -499,6 +499,7 @@
 	align-items: center;
 	display: flex;
 	flex-direction: column;
+	width: 33%;
 }
 .img-employee {
 	width: 56px;
