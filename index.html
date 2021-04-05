@@ -48,15 +48,18 @@
 </nav> -->
 <div id="mySidenav" class="sidenav">
   <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-  <a href="#">About</a>
-  <a href="#">Services</a>
-  <a href="#">Clients</a>
-  <a href="#">Contact</a>
+  <a  class="nav-link"href="#">Home</a>
+  <a class="nav-link" href="#">Chi siamo</a>
+  <a class="nav-link" href="#">Portfolio</a>
+  <a class="nav-link" href="#">Blog</a>
+  <a class="nav-link" href="#">Contattaci</a>
 </div>
 
 <div id="main">
-  <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span>
-
+  <div class="conatiner container__menuHamburger">
+  <span class="menu-hamburger"  onclick="openNav()">&#9776;</span>
+  <img src="./assets/img/ BeeCommerce.png" alt="Logo" class="logo-navBar d-inline-block align-top">
+</div>
  <!-- Hero -->
  
 <div class="container-fluid hero-container">
@@ -126,22 +129,22 @@
   <div id="multi-slider" class="carousel slide" data-bs-ride="carousel">
   <div class="carousel-inner w-100 " id="carousel-logos">
     <div class="carousel-item active">
-      <div class="col-3">
-      <img src="./assets/img/LuxuryDesign.png" class="d-block w-100" style="filter: invert(1);" alt="logo LuxuryDesign "></div>
-      <div class="col-3">
-      <img src="./assets/img/star.png" class="d-block w-100" alt="logo star"></div>
+      <div class="col-3  d-flex">
+      <img src="./assets/img/LuxuryDesign.png" class=" logo d-block w-100" style="filter: invert(1);" alt="logo LuxuryDesign "></div>
+      <div class="col-3  d-flex">
+      <img src="./assets/img/star.png" class=" logo d-block w-100" alt="logo star"></div>
       <div class="col-3 d-flex">
-      <img src="./assets/img/nuna.png" class=" d-block w-100" style="filter: invert(1);" alt="logo Nuna"></div>
+      <img src="./assets/img/nuna.png" class=" logo d-block w-100" style="filter: invert(1);" alt="logo Nuna"></div>
     </div>
    <div class="carousel-item">
       <div class="col-3 d-flex">
-      <img src="./assets/img/FantasiePerle.png" class=" d-block w-100" alt=" Logo Fantasie Perle">
+      <img src="./assets/img/FantasiePerle.png" class=" logo d-block w-100" alt=" Logo Fantasie Perle">
       </div>
       <div class="col-3 d-flex">
-      <img src="./assets/img/efarma.png" class=" d-block w-100" alt="Logo efarma">
+      <img src="./assets/img/efarma.png" class=" logo d-block w-100" alt="Logo efarma">
       </div>
       <div class="col-3 d-flex">
-      <img src="./assets/img/liveProtection.png" class="d-block w-100" alt="logo live protection">
+      <img src="./assets/img/liveProtection.png" class=" logo d-block w-100" alt="logo live protection">
       </div>
     </div>
   </div>
@@ -153,106 +156,59 @@
        <button type="button" class=" btn btn-carousel btn-dark">Parliamo del tuo progetto</button>
      </div>
    </div>
- </div>   
-<!--Slider Proyects-->
-<div class="container-carousel-projects">
+ </div>  
+ 
+
 <div class="container">
-  <div class="row row-networking">
-    <div class=" container-section-projects-title col-12 d-flex">
-      <p class="title-section-projects"> Ultimi progetti realizzati</p>
+  <h2 class= "title-slider">I nostri ultmi progetti</h2>
+  <div id="myCarousel" class="carousel slide" data-ride="carousel">
+    <!-- Indicators -->
+    <ol class="carousel-indicators">
+      <li data-target="#myCarousel"  data-slide-to="0" class="active"></li>
+      <li data-target="#myCarousel"  data-slide-to="1"></li>
+      <li data-target="#myCarousel"  data-slide-to="2"></li>
+    </ol>
+
+    <!-- Wrapper for slides -->
+    <div class="carousel-inner" id="carousel-inner-projects">
+
+      <div class="item active">
+        <img src="./assets/img/progetto-moto.png" alt="pagina web moto" style="width:100%;">
+        <div class="carousel-caption">
+          <h3 class="title-card-carousel">MotoAbbigliamento.it</h3>
+          <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Modi, mollitia</p>
+        </div>
+      </div>
+
+      <div class="item container-project">
+        <img src="./assets/img/progetto-moto.png" alt="pagina web moto" style="width:100%;">
+        <div class="carousel-caption">
+          <h3 class="title-card-carousel">MotoAbbigliamento.it</h3>
+          <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Modi, mollitia</p>
+        </div>
+      </div>
+    
+      <div class="item">
+        <img src="./assets/img/progetto-moto.png" alt="pagina web moto" style="width:100%;">
+        <div class="carousel-caption">
+          <h3 class="title-card-carousel">MotoAbbigliamento.it</h3>
+          <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Modi, mollitia</p>
+        </div>
+      </div>
+  
     </div>
-    </div>
+
+    <!-- Left and right controls -->
+    <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+      <span class="glyphicon glyphicon-chevron-left"></span>
+      <span class="sr-only">Previous</span>
+    </a>
+    <a class="right carousel-control" href="#myCarousel" data-slide="next">
+      <span class="glyphicon glyphicon-chevron-right"></span>
+      <span class="sr-only">Next</span>
+    </a>
+  </div>
 </div>
-<div id="carouselExampleIndicators" class="carousel slide" data-bs-touch="false" data-bs-interval="false">
-  <div class="carousel-indicators" id="carousel-btn">
-     <div id="btnFixed"></div>
-    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active btnSlider" id="btnSlider-active" aria-current="true" aria-label="Slide 1"></button>
-    <button class="btnSlider"type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
-    <button class="btnSlider"type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
-  </div>  
-  <!--First project-->
-   <div class="carousel-inner">
-    <div class="carousel-item active">
-      <div class="container-slider d-flex">
-      <div class="container-info-slider col-md-6">
-        <div class="container-title-carousel-proyects">
-          <div class="number">01.</div>
-          <div class="title-carousel-project">
-      <h6 class="title-slider">Motoabbigliamento.it Abbigliamento e accessori per Moto</h6>
-      </div>
-      </div>
-      <small class="card-text-carousel">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sed in tempore harum, dignissimos quas totam?.</small>
-      <p class="card-small-slider">scopri di piú <img class="arrow-img"src="assets/img/arrow.png"/></p>
-      <div class="container-opinion">
-        <img class="logo-project" src="./assets/img/logoMoto.png" alt="logo">
-        <blockquote class="quote">"Abbiamo collaborato con beecommerce per il restyling del nostro ecommerce e non torneremo piú indietro"</blockquote>
-        <div class="container-info-client">
-        <div class="container-img-client">
-        <img class="img-client"src="https://pymstatic.com/44247/conversions/arturo-torres-medium.jpg" alt="">
-        </div>
-        <div class="container-data-client">
-        <small class="card-text-client">Frank Gilbert</small>
-        <small class="card-text-client">CEO di Motoabbigliamento</small>
-        </div>
-        </div>
-      </div>
-      </div>
-       <div class="container-img-project col-md-6">
-      <img src="./assets/img/progetto-moto.png" class=" img-carousel-projects" alt="Logo progetto">
-      </div>
-    </div>
-    </div>
-    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"  data-bs-slide="prev">
-    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-    <span class="visually-hidden">Previous</span>
-  </button>
-  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"  data-bs-slide="next" >
-    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-    <span class="visually-hidden">Next</span>
-  </button> 
-    <!-- Second project-->
-      <div class="carousel-item">
-      <div class="container-slider d-flex">
-      <div class="container-info-slider row">
-     <div class=" col-md-6 container-title-carousel-proyects">
-          <div class="number">02.</div>
-          <div class="title-carousel-project">
-      <h6 class="title-slider">Motoabbigliamento.it Abbigliamento e accessori per Moto</h6>
-      </div>
-      </div>
-      <small class="card-text-carousel">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sed in tempore harum, dignissimos quas totam?.</small>
-      <p class="card-small-slider">scopri di piú <img class="arrow-img"src="assets/img/arrow.png"/></p>
-      <div class="container-opinion">
-        <img class="logo-project" src="./assets/img/logoMoto.png" alt="logo">
-        <blockquote class="quote">"Abbiamo collaborato con beecommerce per il restyling del nostro ecommerce e non torneremo piú indietro"</blockquote>
-         <div class="container-info-client">
-        <div class="container-img-client">
-        <img class="img-client"src="https://pymstatic.com/44247/conversions/arturo-torres-medium.jpg" alt="">
-        </div>
-        <div class="container-data-client">
-        <small class="card-text-client">Frank Gilbert</small>
-        <small class="card-text-client">CEO di Motoabbigliamento</small>
-        </div>
-        </div>
-      </div>
-      </div>
-       <div class="container-img-project col-md-6">
-      <img src="./assets/img/progetto-moto.png" class="img-carousel-projects" alt="Logo progetto">
-      </div>
-    </div> 
-   
-  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"  data-bs-slide="prev">
-    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-    <span class="visually-hidden">Previous</span>
-  </button>
-  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"  data-bs-slide="next" >
-    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-    <span class="visually-hidden">Next</span>
-  </button>
-</div>
-</div>
-</div>
-</div> 
 <!-- Team -->
 <div class="container-team">
   <div class="container-all-team">
@@ -318,7 +274,7 @@
       </div>
       <div class="experience">
         <h6  class="subtitle-team">Oltre 18 anni di esperienza in Ecommerce</h6>
-        <p class="text-team">Oltre 18 anni di esperienzain Ecommerce. Siamo imprenditori e merchant non solo web agency. Siamo iper specializzati in Ecommerce e non facciamo altro.</p>
+        <p class="text-team">Oltre 18 anni di esperienza in Ecommerce. Siamo imprenditori e merchant non solo web agency. Siamo iper specializzati in Ecommerce e non facciamo altro.</p>
       </div>
       </div>
       <div class="div">
@@ -375,7 +331,7 @@
   <div class="container-form col-xl-10">
 <form class="row g-3">
   <div class="col-6 col-md-6 ">
-    <input  class=" container-input" type="text" class="form-control" id="name" placeholder="Nome">
+    <input  class=" container-input" type="text" class="form-control" id="name" placeholder="Nome" >
   </div>
     <div class="col-6 col-md-6">
     <input class=" container-input" type="text" class="form-control" id="surname" placeholder="Cognome">
@@ -384,19 +340,19 @@
     <input class=" container-input" type="text" class="form-control" id="company" placeholder="Azienda">
   </div>
   <div class="col-6 col-md-6">
-    <input class=" container-input" type="text" class="form-control" id="phone"placeholder="Telefono">
+    <input class=" container-input" type="text" class="form-control" id="phone"placeholder="Telefono" >
   </div>
   <div class="col-6 col-md-6">
-    <input class=" container-input" type="email" class="form-control" id="inputEmail4" placeholder="Email">
+    <input class=" container-input" type="email" class="form-control" id="inputEmail4" placeholder="Email" >
   </div>
   <div class="col-6 col-md-6">
-    <input class=" container-input" type="number" class="form-control" id="inputEmail4" placeholder="Budget">
+    <input class=" container-input" type="number" class="form-control" id="inputEmail4" placeholder="Budget" >
   </div>
   
   <div class="col-12">
     <div class="form-check">
       <input class="form-check-input" type="checkbox" id="gridCheck">
-      <label class="label-input form-check-label text-white" for="gridCheck">
+      <label class="label-input form-check-label text-white" for="gridCheck" required>
         Lorem ipsum dolor sit amet consectetur adipisicing.
       </label>
     </div>
@@ -433,4 +389,7 @@
 <script src="index.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script>
 <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+ <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
 </body>
