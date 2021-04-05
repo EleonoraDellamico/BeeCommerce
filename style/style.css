@@ -193,6 +193,13 @@
 }
 #carousel-logos {
 	background-color: var(--blue-container);
+	height: 50px !important;
+}
+.carousel-item-next,
+.carousel-item-prev,
+.carousel-item.active {
+	display: flex;
+	justify-content: center;
 }
 .carousel-item {
 	text-align: -webkit-center;
@@ -228,6 +235,10 @@
 		padding: 12px !important;
 		font-size: 17px !important;
 	}
+	#carousel-logos {
+		background-color: var(--blue-container);
+		height: 120px !important;
+	}
 }
 @media (min-width: 1000px) {
 	.container-title-carousel {
@@ -239,6 +250,10 @@
 	.btn-project {
 		font-size: 19px !important;
 		padding: 20px !important;
+	}
+	#carousel-logos {
+		background-color: var(--blue-container);
+		height: 120px !important;
 	}
 }
 /*CAROUSEL PROJECTS */
@@ -805,5 +820,5 @@ ul {
 	font-size: 12px;
 }
 .container-details {
-	text-align: center;
+	text-align: center !important;
 }
