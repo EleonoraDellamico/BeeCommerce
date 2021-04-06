@@ -110,17 +110,17 @@
 }
 
 /*HERO CONTAINER*/
-.hero-container {
+#hero-section {
+	width: 100vw;
 	background-color: var(--orange-container);
 	display: flex;
 	flex-direction: column;
 	height: 80vh !important;
 	justify-content: center;
 	margin-bottom: 30px;
-	padding: 30px !important;
 	text-align: start;
-	width: 100vw !important;
 }
+
 .hero-title {
 	color: var(--hero-text-color);
 	font-family: var(--font-family);
@@ -144,17 +144,17 @@
 	text-transform: uppercase;
 }
 @media (min-width: 768px) {
-	.hero-container {
-		padding-left: 100px !important;
-	}
 	.hero-text {
 		font-size: 20px;
 		margin-top: 56px;
 	}
+	.btn-black {
+		padding: 10px 12px !important;
+		font-size: 16px !important;
+	}
 }
 @media (min-width: 1000px) {
-	.hero-container {
-		padding-left: 142px !important;
+	.section-hero {
 		padding-top: 127px !important;
 	}
 	.hero-title {
@@ -164,13 +164,14 @@
 		font-size: 20px;
 		margin-top: 36px !important;
 	}
+	.btn-black {
+		padding: 12px 12px !important;
+		font-size: 18px !important;
+	}
 }
 /* SECTION 360*/
-.card-container {
-	padding: 30px !important;
-}
+
 #full-stack-container {
-	background-color: #f1f2f696;
 	height: fit-content;
 	margin-top: 15px;
 	padding: 8px;
@@ -198,7 +199,7 @@
 .info-icon {
 	height: auto;
 	margin-bottom: 10px;
-	width: 60px;
+	width: 100px;
 }
 .card-title {
 	font-family: var(--font-family);
@@ -209,7 +210,7 @@
 }
 /*MEDIAQUERIES SECTION 360*/
 @media (min-width: 768px) {
-	.card-container {
+	#approach-section {
 		margin-top: 90px !important;
 	}
 	.section-info-title {
@@ -221,17 +222,23 @@
 }
 
 @media (min-width: 1000px) {
-	.card-container {
-		padding-left: 133px !important;
-		padding-right: 133px !important;
-		margin-top: 111px !important;
-		margin-bottom: 200px !important;
+	#approach-section {
+		margin: 200px 0 !important;
 	}
 	.section-info-title {
-		padding-right: 35px;
+		padding-right: 35px !important;
 	}
+	.title-section-approach {
+		font-size: 28px;
+	}
+
 	.card-information {
 		padding-top: 0;
+		padding-right: 39px !important;
+		padding-left: 39px !important;
+	}
+	.card-text {
+		font-size: 16px !important;
 	}
 }
 /*CAROUSEL LOGHI*/
