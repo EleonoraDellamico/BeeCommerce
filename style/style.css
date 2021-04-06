@@ -396,9 +396,12 @@
 	}
 }
 /*TEAM */
+#team-section {
+	background-image: url("../assets/img/background-team.jpeg");
+	width: 100vw;
+}
 .container-team {
 	align-items: center;
-	background-image: url("../assets/img/background-team.jpeg");
 	background-position: top;
 	display: flex;
 	height: 700px;
