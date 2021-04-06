@@ -242,82 +242,95 @@
 	}
 }
 /*CAROUSEL LOGHI*/
-.container-title-carousel {
+#carousel-brand-section {
+	width: 100vw;
 	background-color: var(--blue-container);
+	padding: 26px !important;
+	margin: 100px 0 !important;
+}
+.container-title-carousel {
 	margin-bottom: -2px;
-	margin-top: 30px;
-	padding: 30px;
-	padding-top: 70px;
+	padding: 38px 0 !important;
 	text-align: center;
+}
+#title-brands {
+	display: flex;
+	justify-content: center;
 }
 .carousel-title {
 	color: white;
 	font-family: var(--font-family);
 	font-weight: 900;
+	font-size: 16px !important;
 }
-#carousel-logos {
-	background-color: var(--blue-container);
-	height: 50px !important;
+.logo {
+	width: 100% !important;
+	height: max-content !important;
 }
+.carousel-item.active {
+	display: flex !important;
+	justify-content: center;
+}
+
+.carousel-inner {
+	width: 100vw;
+	display: flex;
+}
+
 .carousel-item-next,
 .carousel-item-prev,
 .carousel-item.active {
 	display: flex;
 	justify-content: center;
 }
-.carousel-item {
+/* .carousel-item {
 	text-align: -webkit-center;
-}
+} */
 .container-btn-carousel {
-	background-color: var(--blue-container);
 	display: flex;
 	justify-content: center;
-	margin-bottom: 60px;
 	margin-top: -2px;
-	padding: 50px;
-	padding-bottom: 76px;
+	padding: 37px;
 }
+
 .btn-carousel {
 	background-color: var(--orange-btn);
 	color: white;
-	cursor: pointer;
+	cursor: pointer !important;
 	font-family: var(--font-family);
-	font-size: 12px;
-	padding: 8px;
+	font-size: 12px !important;
+	padding: 8px !important;
 	text-transform: uppercase;
 }
 
 /*MEDIAQUERIES CAROUSEL LOGHI */
 @media (min-width: 768px) {
-	.container-title-carousel {
-		padding-top: 120px;
+	#carousel-brand-section {
+		padding: 36px !important;
 	}
-	.container-btn-carousel {
-		padding-bottom: 120px;
+	.carousel-title {
+		font-size: 24px !important;
 	}
 	.btn-carousel {
 		padding: 12px !important;
 		font-size: 17px !important;
 	}
-	#carousel-logos {
-		background-color: var(--blue-container);
-		height: 120px !important;
+	.container-btn-carousel {
+		padding-top: 98px;
+	}
+	.container-title-carousel {
+		padding: 61px 0 !important;
 	}
 }
 @media (min-width: 1000px) {
 	.container-title-carousel {
-		padding-top: 160px;
+		padding: 90px 0 !important;
+	}
+	.carousel-title {
+		font-size: 35px !important;
 	}
 	.container-btn-carousel {
-		padding-bottom: 160px;
-	}
-	.btn-project {
-		font-size: 19px !important;
-		padding: 20px !important;
-	}
-	#carousel-logos {
-		background-color: var(--blue-container);
-		height: 120px !important;
+		padding: 160px 0 !important;
 	}
 }
 /*TEAM */
@@ -656,26 +669,8 @@ ul {
 	font-family: var(--font-family);
 	font-size: 12px;
 }
-/*CAROUSEL LOGHI*/
-.logo {
-	width: 100% !important;
-	height: max-content !important;
-}
-.carousel-item.active {
-	display: flex !important;
-	justify-content: center;
-}
-
 .container-details {
 	text-align: center !important;
-}
-.carousel-inner {
-	width: 100vw;
-	display: flex;
-}
-.carousel-item.active {
-	display: flex !important;
-	justify-content: center;
 }
 
 /*carousel progetti*/
