@@ -333,6 +333,68 @@
 		padding: 160px 0 !important;
 	}
 }
+/*carousel progetti*/
+.carousel-caption {
+	background-color: white;
+	text-shadow: none !important;
+	color: black !important;
+	font-family: var(--font-family);
+	padding: 20px;
+	z-index: 10;
+	color: #fff;
+	text-align: center;
+	transform: translateY(-50%) !important;
+	bottom: 0 !important;
+	top: 50% !important;
+	height: fit-content;
+	width: auto;
+	border: 1px solid var(--orange-container);
+}
+
+.carousel-indicators li {
+	display: inline-block;
+	width: 10px;
+	height: 10px;
+	margin-left: 5px !important;
+	text-indent: -999px;
+	cursor: pointer;
+	background-color: rgba(233, 220, 220, 0.52) !important;
+	border: 1px solid #fff;
+	border-radius: 10px;
+}
+
+.carousel-indicators .active {
+	margin: 0;
+	background-color: var(--orange-btn) !important;
+	opacity: 0.8;
+}
+
+#carousel-inner-projects {
+	display: flex !important;
+	flex-direction: column !important;
+}
+.carousel-control {
+	text-shadow: none !important;
+}
+
+.title-card-carousel {
+	font-size: 18px !important;
+}
+.carousel .carousel-indicators li.active {
+	width: 30px;
+}
+@media screen and (min-width: 768px) {
+	.carousel-indicators {
+		bottom: -45px !important;
+	}
+	.carousel-indicators li {
+		width: 15px !important;
+		height: 15px !important;
+	}
+	.carousel .carousel-indicators li.active {
+		width: 30px !important;
+	}
+}
 /*TEAM */
 .container-team {
 	align-items: center;
@@ -671,49 +733,4 @@ ul {
 }
 .container-details {
 	text-align: center !important;
-}
-
-/*carousel progetti*/
-.carousel-caption {
-	background-color: white;
-	text-shadow: none !important;
-	color: black !important;
-	font-family: var(--font-family);
-	padding: 20px;
-	z-index: 10;
-	padding-top: 20px;
-	padding-bottom: 20px;
-	color: #fff;
-	text-align: center;
-}
-.carousel-indicators li {
-	display: inline-block;
-	width: 10px;
-	height: 10px;
-	margin: 1px;
-	text-indent: -999px;
-	cursor: pointer;
-	background-color: rgba(233, 220, 220, 0.52) !important;
-	border: 1px solid #fff;
-	border-radius: 10px;
-}
-
-.carousel-indicators .active {
-	width: 12px;
-	height: 12px;
-	margin: 0;
-	background-color: var(--orange-btn) !important;
-}
-.carousel-indicators {
-	bottom: 22px !important;
-}
-#carousel-inner-projects {
-	display: block !important;
-}
-.carousel-control {
-	text-shadow: none !important;
-}
-
-.title-card-carousel {
-	font-size: 18px !important;
 }
