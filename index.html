@@ -12,6 +12,8 @@
 <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400&display=swap" rel="stylesheet">
 <link rel="preconnect" href="https://fonts.gstatic.com">
 <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+<!--AOS ANIMATION-->
+<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 
     <title>BeeCommerce</title>
   </head>
@@ -33,7 +35,7 @@
 </div>
  
 <!-- Hero -->
-<section id="hero-section">
+<section id="hero-section" data-aos="fade-up" data-aos-duration="1500">
  <div class="container hero-container">
     <div class="row hero-row">
         <div class="col-12 col-md-12">
@@ -56,33 +58,33 @@
        <p class="card-text">Approccio Full Stack per accompagnare il tuo ecommerce dalla start up al break even</p>
      </div>
       </div>
-    <div class="card-information col-12 col-md-4  jusitify-content-center">
+    <div class="card-information col-12 col-md-4  jusitify-content-center"  data-aos="zoom-in" data-aos-duration="3000">
        <img class="info-icon" src="./assets/img/calendar.png" />
        <h4 class="card-title">Pianificazione</h4>
        <p class="card-text"> Puoi avere successo in questo mercato ma é necessario armarsi di un business plan stategico</p>
     </div>
-     <div class=" card-information col-12 col-md-4  jusitify-content-center">
+     <div class=" card-information col-12 col-md-4  jusitify-content-center"  data-aos="zoom-in" data-aos-duration="3000">
        <img class="info-icon" src="./assets/img/orologio.png" />
        <h4 class="card-title">Temporary Management</h4>
        <p class="card-text"> Offriamo pro tempore Ecommmerce Manager con esperienza che possano affiancare l'implementazione della strategia</p>
      </div>
-     <div class="card-information col-12 col-md-4 offset-md-4 jusitify-content-center">
+     <div class="card-information col-12 col-md-4 offset-md-4 jusitify-content-center" data-aos="zoom-in" data-aos-duration="3000">
        <img class="info-icon" src="./assets/img/pintura.png" />
        <h4 class="card-title">Branding & Web Design</h4>
        <p class="card-text"> le grafiche personalizzate e il brand design sono necessari per avere un'immagine unica e vincente</p>
 </div>
-     <div class="card-information col-12 col-md-4 jusitify-content-center">
+     <div class="card-information col-12 col-md-4 jusitify-content-center" data-aos="zoom-in" data-aos-duration="3000">
        <img class="info-icon" src="./assets/img/magento-icon.png"/>
         <h4 class="card-title">Sviluppo Magento</h4>
        <p class="card-text"> Lavoriamo e sviluppiamo su Magento sin dalla nascita (2008) con una fortissima expertise e approccio full stack</p>
 </div>
-     <div class="card-information col-12 col-md-4 offset-md-4 jusitify-content-center">
+     <div class="card-information col-12 col-md-4 offset-md-4 jusitify-content-center" data-aos="zoom-in" data-aos-duration="3000">
        <img class="info-icon" src="./assets/img/mobile.png"/>
         <h4 class="card-title">Mobile Optimization</h4>
        <p class="card-text"> Il mondo é mobile, deve esserlo anche il tuo ecommerce. Qualsiasi sia la tua piattaforma offriamo ottimizzazione mobile</p>
 </div>
 
-     <div class="card-information col-12 col-md-4 jusitify-content-center">
+     <div class="card-information col-12 col-md-4 jusitify-content-center" data-aos="zoom-in" data-aos-duration="3000">
        <img class="info-icon" src="./assets/img/Megafono.png"/>
         <h4 class="card-title">Marketing & Aumento Conversioni</h4>
        <p class="card-text"> Il nostro approccio è "data-driven oriented", partendo dai numeri, offriamo i migliori percorsi di accellerazione per le tue vendite.</p>
@@ -242,7 +244,10 @@
         </div>
      </div>
      </div>
-<div class="container-info-team col-md-6 col-xl-6">
+<div class="container-info-team col-md-6 col-xl-6" data-aos="fade-zoom-in"
+     data-aos-easing="ease-in-back"
+     data-aos-delay="500"
+     data-aos-offset="0">
     <div class="container-details-team">
       <small class="small-team">Una scelta unica</small>
       <h2 class="title-team" id="title-section-team">Un gran networking di professionisti </h2>
@@ -280,7 +285,7 @@
     <div class="col-12 d-flex justify-content-center container-title-networking">
       <h2 class=" title-networking"> Il nostro network</h2>
     </div>
-    <div class="card  card-networking col-12 col-md-5 col-xl-4" id="card-networking">
+    <div class="card  card-networking col-12 col-md-5 col-xl-4" id="card-networking" data-aos="flip-left" data-aos-duration="3000">
   <div class="card-body bodyCard-networking">
     <p class="card-text website-text">Ecommerce-school.it</p>
     <img class="icon-networking" src="./assets/img/ecommerceSchool.png" alt="Logo ecommerce">
@@ -289,7 +294,7 @@
      <img src="./assets/img/project-ecommerceSchool.png" class="card-img-bottom" alt="Foto web ecommerce">
   </div>
 </div>
-<div class="card card-networking col-12 col-md-5 col-xl-4">
+<div class="card card-networking col-12 col-md-5 col-xl-4" data-aos="flip-left" data-aos-duration="3000">
   <div class="card-body bodyCard-networking">
     <p class=" card-text website-text">magentiamo.it</p>
     <img class="icon-networking"src="./assets/img/logo-magentiamo.png" alt="Logo magentiamo">
@@ -367,6 +372,10 @@
   </div>
 </div>
 </div>
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
 <script src="index.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script>
 <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
