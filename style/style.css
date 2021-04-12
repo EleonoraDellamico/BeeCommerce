@@ -328,22 +328,7 @@
 	}
 }
 /*CAROUSEL PROGETTI*/
-/*
 
-@media screen and (min-width: 768px) {
-	.carousel-indicators {
-		bottom: -45px !important;
-	}
-	.carousel-indicators li {
-		width: 15px !important;
-		height: 15px !important;
-	}
-	.carousel .carousel-indicators li.active {
-		width: 30px !important;
-	}
-}
-
- */
 #section-carousel-proyects {
 	background-color: white;
 }
