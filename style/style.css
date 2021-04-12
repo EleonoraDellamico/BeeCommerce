@@ -641,10 +641,13 @@
 @media (min-width: 1000px) {
 	#section-contact {
 		padding: 100px 300px !important;
+		height: 45%;
 	}
 	.container-contact-info {
 		align-items: center;
+		margin-bottom: 100px !important;
 	}
+
 	.contact-small {
 		color: white;
 		font-size: 12px;
