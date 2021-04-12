@@ -171,11 +171,6 @@
 }
 /* SECTION 360*/
 
-#full-stack-container {
-	height: fit-content;
-	margin-top: 15px;
-	padding: 8px;
-}
 .section-info-title {
 	margin-bottom: 27px !important;
 }
@@ -183,6 +178,11 @@
 	font-family: var(--font-family);
 	font-weight: 900;
 	text-transform: uppercase;
+}
+#full-stack-container {
+	height: fit-content;
+	margin-top: 15px;
+	padding: 8px;
 }
 .card-small-section {
 	color: var(--orange-small);
@@ -192,7 +192,7 @@
 	margin-left: 6px;
 	width: 20px;
 }
-.card-information {
+.container-card-information {
 	margin-bottom: 27px !important;
 	padding: 20px;
 }
@@ -253,7 +253,7 @@
 	padding: 38px 0 !important;
 	text-align: center;
 }
-#title-brands {
+#container-title-brands {
 	display: flex;
 	justify-content: center;
 }
@@ -264,17 +264,11 @@
 	font-size: 16px !important;
 }
 .logo {
-	width: 100% !important;
 	height: max-content !important;
 }
 .carousel-item.active {
 	display: flex !important;
 	justify-content: center;
-}
-
-.carousel-inner {
-	width: 100vw;
-	display: flex;
 }
 
 .carousel-item-next,
@@ -283,9 +277,7 @@
 	display: flex;
 	justify-content: center;
 }
-/* .carousel-item {
-	text-align: -webkit-center;
-} */
+
 .container-btn-carousel {
 	display: flex;
 	justify-content: center;
@@ -305,21 +297,22 @@
 
 /*MEDIAQUERIES CAROUSEL LOGHI */
 @media (min-width: 768px) {
-	#carousel-brand-section {
-		padding: 36px !important;
+	.container-title-carousel {
+		padding: 61px 0 !important;
 	}
 	.carousel-title {
 		font-size: 24px !important;
 	}
-	.btn-carousel {
-		padding: 12px !important;
-		font-size: 17px !important;
+	#carousel-brand-section {
+		padding: 36px !important;
 	}
 	.container-btn-carousel {
 		padding-top: 98px;
 	}
-	.container-title-carousel {
-		padding: 61px 0 !important;
+
+	.btn-carousel {
+		padding: 12px !important;
+		font-size: 17px !important;
 	}
 }
 @media (min-width: 1000px) {
@@ -333,24 +326,10 @@
 		padding: 160px 0 !important;
 	}
 }
-/*carousel progetti*/
-.carousel-caption {
-	background-color: white;
-	text-shadow: none !important;
-	color: black !important;
-	font-family: var(--font-family);
-	padding: 20px;
-	z-index: 10;
-	color: #fff;
-	text-align: center;
-	transform: translateY(-50%) !important;
-	bottom: 0 !important;
-	top: 50% !important;
-	height: fit-content;
-	width: auto;
-	border: 1px solid var(--orange-container);
+/*CAROUSEL PROGETTI*/
+.title-card-carousel {
+	font-size: 18px !important;
 }
-
 .carousel-indicators li {
 	display: inline-block;
 	width: 10px;
@@ -377,12 +356,26 @@
 	text-shadow: none !important;
 }
 
-.title-card-carousel {
-	font-size: 18px !important;
-}
 .carousel .carousel-indicators li.active {
 	width: 30px;
 }
+.carousel-caption {
+	background-color: white;
+	text-shadow: none !important;
+	color: black !important;
+	font-family: var(--font-family);
+	padding: 20px;
+	z-index: 10;
+	color: #fff;
+	text-align: center;
+	transform: translateY(-50%) !important;
+	bottom: 0 !important;
+	top: 50% !important;
+	height: fit-content;
+	width: auto;
+	border: 1px solid var(--orange-container);
+}
+
 @media screen and (min-width: 768px) {
 	.carousel-indicators {
 		bottom: -45px !important;
@@ -407,7 +400,6 @@
 	height: 700px;
 	margin-top: 90px;
 	padding: 20px;
-	width: 100vw;
 }
 .container-all-team {
 	background-color: var(--blue-container);
@@ -457,7 +449,7 @@
 /*TEAM INFO*/
 .container-info-team {
 	border-radius: 10%;
-	display: none;
+
 	flex-direction: column;
 	height: fit-content;
 	margin-left: 10px;
@@ -487,11 +479,7 @@
 .tick {
 	margin-right: 8px;
 }
-@media (min-width: 768px) {
-	.container-info-team {
-		display: flex;
-	}
-}
+
 @media (min-width: 1000px) {
 	.container-team {
 		justify-content: center;
@@ -509,9 +497,6 @@
 	.subtitle-team,
 	.text-team {
 		font-size: 18px;
-	}
-	.container-info-team {
-		margin-left: 50px;
 	}
 }
 /* IL NOSTRO NETWORKING */
@@ -592,7 +577,7 @@
 }
 
 /*CONTACT*/
-.container-contact {
+#section-contact {
 	background-color: var(--orange-container) !important;
 	padding: 30px;
 }
@@ -712,10 +697,12 @@
 	}
 }
 /*FOOTER*/
-.container-footer {
+#section-footer {
 	background-color: var(--blue-container);
+	width: 100vw;
 	padding: 30px;
 }
+
 .social-icon-footer {
 	display: flex;
 	flex-direction: row;
@@ -746,6 +733,6 @@ ul {
 	font-family: var(--font-family);
 	font-size: 12px;
 }
-.container-details {
+.container-details-footer {
 	text-align: center !important;
 }
