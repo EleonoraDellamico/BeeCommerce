@@ -4,18 +4,19 @@
 	box-sizing: border-box;
 }
 :root {
-	--orange-container: #f75506;
-	--orange-menu: #f75506;
-	--orange-title: #f75506;
+	--bs-orange: #f75506;
+	--bs-font-montserrat: 'Montserrat', sans-serif;
+	/* --orange-title: #f75506;
 	--orange-btn: #f75506;
 	--orange-small: #f75506;
 	--orange-name-team: #f75506;
 	--blue-container: #14171d;
-	--font-family: 'Montserrat', sans-serif;
-	--btn-dark: black;
-	--network-container: #f5f7f8;
-	--hero-text-color: white;
-	--card-text-color: rgb(149, 148, 148);
+	--font-family: 'Montserrat', sans-serif; */
+	--bs-dark: black;
+	--bs-grey: #f5f7f8;
+	--bs-white: white;
+	--bs-grey-text: rgb(149, 148, 148);
+	--bs-blue: #14171d;
 }
 
 /*NAVBAR*/
@@ -36,7 +37,7 @@
 	z-index: 1;
 	top: 0;
 	left: 0;
-	background-color: white;
+	background-color: var(--bs-white);
 	overflow-x: hidden;
 	transition: 0.5s;
 	padding-top: 60px;
@@ -47,18 +48,18 @@
 
 .sidenav a {
 	text-decoration: none;
-	color: black !important;
+	color: var(--bs-dark) !important;
 	font-size: 15px !important;
 	padding: 0 !important;
 	display: block;
 	transition: 0.3s;
 	margin-bottom: 24px;
-	font-family: var(--font-family);
+	font-family: var(--bs-font-montserrat);
 	margin-left: 20px !important;
 }
 
 .sidenav a:hover {
-	color: var(--orange-menu) !important;
+	color: var(--bs-orange) !important;
 }
 
 .sidenav .closebtn {
@@ -113,7 +114,7 @@
 /*HERO CONTAINER*/
 #hero-section {
 	width: 100vw;
-	background-color: var(--orange-container);
+	background-color: var(--bs-orange);
 	display: flex;
 	flex-direction: column;
 	height: 80vh !important;
@@ -123,21 +124,21 @@
 }
 
 .hero-title {
-	color: var(--hero-text-color);
-	font-family: var(--font-family);
+	color: var(--bs-white);
+	font-family: var(--bs-font-montserrat);
 	font-weight: 900;
 	text-transform: uppercase;
 }
 .hero-text {
-	color: var(--hero-text-color);
-	font-family: var(--font-family);
+	color: var(--bs-white);
+	font-family: var(--bs-font-montserrat);
 }
 .btn-hero-footer {
-	background-color: var(--btn-dark);
+	background-color: var(--bs-dark);
 	border-radius: 5px;
 	color: white;
 	cursor: pointer;
-	font-family: var(--font-family);
+	font-family: var(--bs-font-montserrat);
 	font-size: 12px;
 	margin-top: 15px;
 	outline: none;
@@ -176,7 +177,7 @@
 	margin-bottom: 27px !important;
 }
 .title-section-approach {
-	font-family: var(--font-family);
+	font-family: var(--bs-font-montserrat);
 	font-weight: 900;
 	text-transform: uppercase;
 }
@@ -186,7 +187,7 @@
 	padding: 8px;
 }
 .card-small-section {
-	color: var(--orange-small);
+	color: var(--bs-orange);
 }
 .arrow-img {
 	height: auto;
@@ -203,11 +204,11 @@
 	width: 100px;
 }
 .card-title {
-	font-family: var(--font-family);
+	font-family: var(--bs-font-montserrat);
 	font-weight: 900;
 }
 .card-text {
-	color: var(--card-text-color);
+	color: var(--bs-grey-text);
 }
 /*MEDIAQUERIES SECTION 360*/
 @media (min-width: 768px) {
@@ -245,7 +246,7 @@
 /*CAROUSEL LOGHI*/
 #carousel-brand-section {
 	width: 100vw;
-	background-color: var(--blue-container);
+	background-color: var(--bs-blue);
 	padding: 26px !important;
 	margin: 100px 0 !important;
 }
@@ -259,8 +260,8 @@
 	justify-content: center;
 }
 .carousel-title {
-	color: white;
-	font-family: var(--font-family);
+	color: var(--bs-white);
+	font-family: var(--bs-font-montserrat);
 	font-weight: 900;
 	font-size: 16px !important;
 }
@@ -287,10 +288,10 @@
 }
 
 .btn-carousel {
-	background-color: var(--orange-btn);
-	color: white;
+	background-color: var(--bs-orange);
+	color: var(--bs-white);
 	cursor: pointer !important;
-	font-family: var(--font-family);
+	font-family: var(--bs-font-montserrat);
 	font-size: 12px !important;
 	padding: 8px !important;
 	text-transform: uppercase;
@@ -330,7 +331,7 @@
 /*CAROUSEL PROGETTI*/
 
 #section-carousel-proyects {
-	background-color: white;
+	background-color: var(--bs-white);
 }
 .carousel {
 	display: flex !important;
@@ -347,24 +348,24 @@
 }
 
 .carousel-caption {
-	background-color: white;
+	background-color: var(--bs-white);
 	text-shadow: none !important;
 	color: black !important;
-	font-family: var(--font-family);
+	font-family: var(--bs-font-montserrat);
 	padding: 20px;
 	z-index: 10;
-	color: #fff;
+	color: var(--bs-white);
 	text-align: center;
 	transform: translateY(-50%) !important;
 	bottom: 0 !important;
 	top: 50% !important;
 	height: fit-content;
 	width: auto;
-	border: 1px solid var(--orange-container);
+	border: 1px solid var(--bs-orange);
 }
 .carousel-indicators button.button-slider.active {
 	opacity: 1;
-	background-color: var(--orange-btn) !important;
+	background-color: var(--bs-orange) !important;
 	width: 30px !important;
 	border-radius: 11px !important;
 	height: 8px !important;
@@ -408,7 +409,7 @@
 	padding: 20px;
 }
 .container-all-team {
-	background-color: var(--blue-container);
+	background-color: var(--bs-blue);
 	display: flex;
 	flex-direction: column;
 	height: 500px;
@@ -425,7 +426,7 @@
 }
 
 .job-position {
-	color: white;
+	color: var(--bs-white);
 }
 .padding {
 	margin-top: 60px;
@@ -441,16 +442,16 @@
 }
 .name,
 .job-position {
-	font-family: var(--font-family);
+	font-family: var(--bs-font-montserrat);
 	margin: 0 !important;
 	padding: 0 !important;
 }
 .name {
-	color: var(--orange-name-team);
+	color: var(--bs-orange);
 	font-weight: bolder;
 }
 .job-position {
-	color: white;
+	color: var(--bs-white);
 }
 /*TEAM INFO*/
 .container-info-team {
@@ -465,22 +466,22 @@
 	display: flex;
 }
 .small-team {
-	color: white;
-	font-family: var(--font-family);
+	color: var(--bs-white);
+	font-family: var(--bs-font-montserrat);
 	text-transform: uppercase;
 }
 .title-team,
 .subtitle-team {
-	color: white;
-	font-family: var(--font-family);
+	color: var(--bs-white);
+	font-family: var(--bs-font-montserrat);
 	font-weight: bold;
 }
 #title-section-team {
 	text-transform: uppercase;
 }
 .text-team {
-	color: white;
-	font-family: var(--font-family);
+	color: var(--bs-white);
+	font-family: var(--bs-font-montserrat);
 }
 .tick {
 	margin-right: 8px;
@@ -507,7 +508,7 @@
 }
 /* IL NOSTRO NETWORKING */
 #container-networking {
-	background-color: var(--network-container) !important;
+	background-color: var(--bs-grey) !important;
 	padding: 30px !important;
 	padding-bottom: 111px !important;
 	width: 100vw;
@@ -518,8 +519,8 @@
 }
 .title-networking,
 .title-slider {
-	color: var(--orange-title);
-	font-family: var(--font-family);
+	color: var(--bs-orange);
+	font-family: var(--bs-font-montserrat);
 	font-weight: 900;
 	text-transform: uppercase;
 	font-size: 20px;
@@ -543,8 +544,8 @@
 	justify-content: center;
 }
 .website-text {
-	color: black;
-	font-family: var(--font-family);
+	color: var(--bs-dark);
+	font-family: var(--bs-font-montserrat);
 	font-weight: 500;
 	font-size: 14px;
 	text-transform: uppercase;
@@ -586,7 +587,7 @@
 
 /*CONTACT*/
 #section-contact {
-	background-color: var(--orange-container) !important;
+	background-color: var(--bs-orange) !important;
 	padding: 30px;
 }
 .container-contact-info {
@@ -597,7 +598,7 @@
 	margin-bottom: 20px !important;
 }
 .contact-small {
-	color: white;
+	color: var(--bs-white);
 	font-size: 12px;
 	font-weight: 500;
 	margin-bottom: 6px;
@@ -605,20 +606,20 @@
 }
 
 .contact-text {
-	color: white;
-	font-family: var(--font-family);
+	color: var(--bs-white);
+	font-family: var(--bs-font-montserrat);
 }
 .contact-title {
-	color: white;
-	font-family: var(--font-family);
+	color: var(--bs-white);
+	font-family: var(--bs-font-montserrat);
 	text-transform: uppercase;
 	text-align: center;
 }
 
 .form-check-label {
-	font-family: var(--font-family);
+	font-family: var(--bs-font-montserrat);
 	font-size: 10px;
-	color: white;
+	color: var(--bs-white);
 	letter-spacing: 1px;
 	font-weight: 300;
 }
@@ -655,7 +656,7 @@
 	}
 
 	.contact-small {
-		color: white;
+		color: var(--bs-white);
 		font-size: 12px;
 		font-weight: 500;
 		margin-bottom: 36px;
@@ -679,7 +680,7 @@
 }
 /*FOOTER*/
 #section-footer {
-	background-color: var(--blue-container);
+	background-color: var(--bs-blue);
 	width: 100vw;
 	padding: 30px;
 	display: flex;
@@ -704,8 +705,8 @@ ul {
 	justify-content: center;
 }
 .link-footer {
-	color: white;
-	font-family: var(--font-family);
+	color: var(--bs-white);
+	font-family: var(--bs-font-montserrat);
 	list-style: none;
 	margin-right: 21px;
 	margin-top: 10px;
@@ -714,7 +715,7 @@ ul {
 	text-align: center !important;
 }
 .small-text-footer {
-	color: white;
-	font-family: var(--font-family);
+	color: var(--bs-white);
+	font-family: var(--bs-font-montserrat);
 	font-size: 12px;
 }
