@@ -328,38 +328,39 @@
 	}
 }
 /*CAROUSEL PROGETTI*/
-.title-card-carousel {
-	font-size: 18px !important;
-}
-.carousel-indicators li {
-	display: inline-block;
-	width: 10px;
-	height: 10px;
-	margin-left: 5px !important;
-	text-indent: -999px;
-	cursor: pointer;
-	background-color: rgba(233, 220, 220, 0.52) !important;
-	border: 1px solid #fff;
-	border-radius: 10px;
+/*
+
+@media screen and (min-width: 768px) {
+	.carousel-indicators {
+		bottom: -45px !important;
+	}
+	.carousel-indicators li {
+		width: 15px !important;
+		height: 15px !important;
+	}
+	.carousel .carousel-indicators li.active {
+		width: 30px !important;
+	}
 }
 
-.carousel-indicators .active {
-	margin: 0;
-	background-color: var(--orange-btn) !important;
-	opacity: 0.8;
+ */
+#section-carousel-proyects {
+	background-color: white;
 }
-
-#carousel-inner-projects {
+.carousel {
 	display: flex !important;
-	flex-direction: column !important;
+	justify-content: center !important;
 }
-.carousel-control {
-	text-shadow: none !important;
+.carousel-inner {
+	position: relative !important;
+	width: 78% !important;
+	overflow: hidden !important;
+}
+.carousel-indicators {
+	z-index: 999;
+	bottom: -32px !important;
 }
 
-.carousel .carousel-indicators li.active {
-	width: 30px;
-}
 .carousel-caption {
 	background-color: white;
 	text-shadow: none !important;
@@ -376,17 +377,36 @@
 	width: auto;
 	border: 1px solid var(--orange-container);
 }
-
+.carousel-indicators button.button-slider.active {
+	opacity: 1;
+	background-color: var(--orange-btn) !important;
+	width: 30px !important;
+	border-radius: 11px !important;
+	height: 8px !important;
+	border-radius: 30px !important;
+}
+.carousel-indicators button.button-slider {
+	display: inline-block;
+	width: 10px !important;
+	height: 10px !important;
+	margin-left: 5px !important;
+	text-indent: -999px;
+	cursor: pointer;
+	background-color: rgba(47, 46, 46, 0.87) !important;
+	border: 1px solid #fff;
+	border-radius: 20px !important;
+}
 @media screen and (min-width: 768px) {
 	.carousel-indicators {
-		bottom: -45px !important;
+		bottom: -47px !important;
 	}
-	.carousel-indicators li {
-		width: 15px !important;
-		height: 15px !important;
+}
+@media (min-width: 1000px) {
+	.carousel-inner {
+		width: 70% !important;
 	}
-	.carousel .carousel-indicators li.active {
-		width: 30px !important;
+	#section-carousel-proyects {
+		height: 81vh !important;
 	}
 }
 /*TEAM */
