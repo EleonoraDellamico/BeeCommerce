@@ -42,7 +42,7 @@
 	padding-top: 60px;
 	display: flex;
 	flex-direction: column;
-	margin-left: 17px;
+	margin-left: 0px !important;
 }
 
 .sidenav a {
@@ -54,6 +54,7 @@
 	transition: 0.3s;
 	margin-bottom: 24px;
 	font-family: var(--font-family);
+	margin-left: 20px !important;
 }
 
 .sidenav a:hover {
